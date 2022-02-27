@@ -142,3 +142,5 @@ const MintForm = ()=>{
     )
     
 }
+
+export default MintForm;
