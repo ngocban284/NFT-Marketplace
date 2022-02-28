@@ -6,7 +6,7 @@ import "./NFTCollection.sol";
 contract NFTMarketplace {
     uint256 public offerCount;
     mapping(uint256 => _Offer) public offers;
-    mapping(address => uint256) userFunds;
+    mapping(address => uint256) public userFunds;
     NFTCollection nftCollection;
 
     struct _Offer {
