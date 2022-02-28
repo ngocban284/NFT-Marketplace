@@ -81,7 +81,7 @@ const marketplaceReducer = (state,action)=>{
     }
 
     if (action.type === "UPDATEOFFER") {
-        const offers = state.offers.filter(offer => offer.offerId !== parseInt(action.offer.offerId));
+        const offers = state.offers.filter(offer => offer.offerId !== parseInt(action.offerId));
 
         return {
             contract: state.contract,
@@ -147,8 +147,8 @@ const MarketplaceProvider = async(props)=>{
         dispatchMarketplaceAction({offer:offer,type:"ADDOFFER"});
     }
 
-    const updateOfferHandler = (offer)=>{
-        dispatchMarketplaceAction({offer:offer,type:"UPDATEOFFER"});
+    const updateOfferHandler = (offerId)=>{
+        dispatchMarketplaceAction({offerId:offerId,type:"UPDATEOFFER"});
     }
 
     const setMktIsLoadingHandler = (loading)=>{

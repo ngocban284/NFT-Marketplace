@@ -109,9 +109,9 @@ const CollectionProvider = (props)=>{
     }
 
     const loadTotalSupplyHandler = async(contract)=>{
-        const loadTotalSupply = await contract.methods.totalSupply().call();
+        const totalSupply = await contract.methods.totalSupply().call();
         dispatchCollectionState({totalSupply:totalSupply,type:"LOADSUPPLY"});
-        return loadTotalSupply;
+        return totalSupply;
     }
 
     const loadCollectionHandler = async(contract,totalSupply)=>{
