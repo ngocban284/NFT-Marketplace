@@ -1,8 +1,8 @@
 import React, { useContext, useEffect } from 'react';
 
 import web3 from './connection/web3';
-import Navbar from './components/layout/Navbar';
-import Main from './components/content/main';
+import Navbar from './components/Layout/Navbar';
+import Main from './components/Content/Main';
 import Web3Context from './store/web3-context';
 import CollectionContext from './store/collection-context';
 import MarketplaceContext from './store/marketplace-context'
@@ -34,7 +34,7 @@ const App = () => {
       const account = await web3Ctx.loadAccount(web3);
 
       // Load Network ID
-      const networkId = await web3Ctx.loadNetwordId(web3);
+      const networkId = await web3Ctx.loadNetworkId(web3);
 
       // Load Contracts      
       const nftDeployedNetwork = NFTCollection.networks[networkId];

@@ -10,7 +10,7 @@ contract NFTCollection is ERC721, ERC721Enumerable {
   mapping(uint => string) _tokenIdToTokenURI;
 
   constructor() 
-    ERC721("mTC Collection", "mTC") 
+    ERC721("DNB Collection", "DNB") 
   {
   }
 

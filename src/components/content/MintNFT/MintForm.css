@@ -1,0 +1,10 @@
+.generate-color {
+  background-color: rgb(123, 176, 159) !important;
+}
+
+hr {
+  background-color: rgb(123, 176, 159);
+  border: 0 none;
+  color: rgb(123, 176, 159);
+  height: 1px;
+}

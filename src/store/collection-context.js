@@ -1,17 +1,17 @@
-import React from "react";
+import React from 'react';
 
-const CollectionContext =  React.createContext({
-    contract:null,
-    totalSupply:null,
-    collection:[],
-    loadContract:()=>{},
-    loadTotalSupply:()=>{},
-    loadCollection:()=>{},
-    updateTotalSupply:()=>{},
-    updateCollection:()=>{},
-    updateOwner:()=>{},
-    nftIsLoading:true,
-    setNftIsLoading:()=>{}
+const CollectionContext = React.createContext({
+  contract: null,
+  totalSupply: null,
+  collection: [],
+  nftIsLoading: true,
+  loadContract: () => {},
+  loadTotalSupply: () => {},
+  loadCollection: () => {},
+  updateTotalSupply: () => {},
+  updateCollection: () => {},
+  updateOwner: () => {},
+  setNftIsLoading: () => {}
 });
 
-export default  CollectionContext;
+export default CollectionContext;
