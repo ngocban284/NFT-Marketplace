@@ -19,7 +19,7 @@ These instructions will get you a copy of the project up and running on your loc
 First, you will need to `clone`
 
 ```
-$ gh repo clone ngocban284/NFT-Marketplace
+$ https://github.com/ngocban284/NFT-Marketplace.git
 ```
 
 ### Installing
